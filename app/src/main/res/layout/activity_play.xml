@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+        <xu.fyp.project.WaveformAudio
+            android:id="@+id/waveform_audio"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"/>
+
+
+
+        <xu.fyp.project.WaveformCompare
+            android:id="@+id/waveform_compare"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_below="@id/waveform_audio"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:background="#01444444"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/button_play"
+            android:onClick="clickPlay"
+            />
+        <ImageButton
+            android:background="#01444444"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/button_pause"
+            android:onClick="clickPause"
+            />
+        <ImageButton
+            android:background="#01444444"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/button_stop"
+            android:onClick="clickStop" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

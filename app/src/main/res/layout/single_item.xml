@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <!-- 顏色分類 -->
+    <RelativeLayout
+        android:id="@+id/icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="3sp"
+        android:layout_marginLeft="64dp"
+        android:layout_gravity="right">
+
+        <!-- 勾選 -->
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/headphon"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="3sp"
+        android:layout_toRightOf="@id/icon"
+        android:orientation="vertical" >
+
+        <!-- 標題 -->
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical" />
+
+        <!-- 日期時間 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/title"
+                android:id="@+id/content_text"
+                android:paddingRight="6dp"/>
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingLeft="6dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/type_color"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="3sp"
+        android:layout_alignParentRight="true">
+
+        <!-- 勾選 -->
+        <ImageView
+            android:id="@+id/selected_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/button_check"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</RelativeLayout>

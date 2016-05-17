@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="#ffffff"
+        android:text="00:00:00"
+        android:layout_margin="24dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dip"
+        android:paddingTop="150dp">
+
+        <xu.fyp.project.WaveformView
+            android:id="@+id/waveform_view"
+            android:layout_width="match_parent"
+            android:layout_height="250dip"
+            />
+
+    </FrameLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+
+            android:id="@+id/test_stop"
+            android:src="@drawable/button_stop"
+            android:layout_alignParentBottom="true"
+            android:background="#01444444"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="12dp"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/record_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/button_play"
+            android:background="#01444444"
+            android:onClick="clickRecord"
+            android:layout_margin="12dp"
+             />
+
+        <ImageButton
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="fitXY"
+            android:id="@+id/record_ok"
+            android:background="#01444444"
+            android:src="@drawable/button_check"
+            android:onClick="onSubmit"
+            android:layout_margin="12dp"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
