@@ -13,13 +13,14 @@ The information of the record will be saved by using SQLite
 ![image](https://github.com/ApolloXu/Speech-Enhancement-in-Mobile-Phone/blob/master/Screenshot/SQLite.png)
 
 The existing record can be played or deleted
+
 ![image](https://github.com/ApolloXu/Speech-Enhancement-in-Mobile-Phone/blob/master/Screenshot/Delete.png)
 
 During playing, the different between original signal and enhanced signal will shown an the screen
 ![image](https://github.com/ApolloXu/Speech-Enhancement-in-Mobile-Phone/blob/master/Screenshot/Play.png)
 
 Using perofession software, the enhancement is more clear
-![image](https://github.com/ApolloXu/Speech-Enhancement-in-Mobile-Phone/blob/master/Screenshot/Compare.png)
+![image](https://github.com/ApolloXu/Speech-Enhancement-in-Mobile-Phone/blob/master/Screenshot/compare.png)
 
 It also includes JNI which using the source code from WebRTC
 ![image](https://github.com/ApolloXu/Speech-Enhancement-in-Mobile-Phone/blob/master/Screenshot/JNI.png)
