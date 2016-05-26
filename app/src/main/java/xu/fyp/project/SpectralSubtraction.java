@@ -11,14 +11,16 @@ import java.io.FileOutputStream;
 public class SpectralSubtraction {
 
     private final static double framePeriod = 0.064;
-    private final static int frameSize = 1024;
+    private static int frameSize;
     private final static double alphaMax = 4.0;
     private final static double alphaMin = 1.0;
     private final static double betaMax = 0.1;
     private final static double betaMin = 0.04;
-    private final static int frameAdv = 512;
+    private static int frameAdv;
     private final static int po = 1;
     private static FFT FFT;
+
+
 
     protected static double[] signal;
     private static short[] result;
@@ -29,7 +31,9 @@ public class SpectralSubtraction {
     private static double noiseEnergy =0;
     private static DoubleFFT_1D FFT1D;
 
-    public SpectralSubtraction(short[] buffer){
+    public SpectralSubtraction(short[] buffer, int frameSize){
+        this.frameSize = frameSize;
+        frameAdv = frameSize/2;
         signal = new double[buffer.length];
         for(int i=0;i<buffer.length;i++){
             signal[i]=(double) buffer[i];

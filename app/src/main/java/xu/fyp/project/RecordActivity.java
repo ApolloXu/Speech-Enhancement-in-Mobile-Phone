@@ -445,7 +445,7 @@ public class RecordActivity extends Activity {
                     }else if(loop==7){
                         System.arraycopy(signal,0,noise,loop*bufSize,bufSize);
                         System.arraycopy(buffer1,0,spectralSbutraction,loop*bufSize,bufSize);
-                        ss = new SpectralSubtraction(spectralSbutraction);
+                        ss = new SpectralSubtraction(spectralSbutraction,bufSize);
                         noiseAverage = ss.noiseAverage(noise);
                         buffer1 = new short[bufSize];
                     }
@@ -530,7 +530,7 @@ public class RecordActivity extends Activity {
                     }else if(loop==7){
                         System.arraycopy(signal,0,noise,loop*bufSize,bufSize);
                         System.arraycopy(buffer2,0,spectralSbutraction,loop*bufSize,bufSize);
-                        ss = new SpectralSubtraction(spectralSbutraction);
+                        ss = new SpectralSubtraction(spectralSbutraction,bufSize);
                         noiseAverage = ss.noiseAverage(noise);
                         buffer2 = new short[bufSize];
                     }
