@@ -324,7 +324,7 @@ public class SpectralSubtraction {
 
             specX = removeHammingWindow(specX,hamming);
             //Log.e("ss","removehamming");
-            for( int e=255;e<767; e++){
+            for( int e=frameAdv/2-1;e<frameAdv*3/2-1; e++){
                 double temp = specX[e]*32768.0;
                 //Log.e("ss",String.valueOf(specX[e]));
                 result[e+start] = (short)temp;
